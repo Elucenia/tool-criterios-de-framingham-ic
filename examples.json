@@ -1,0 +1,77 @@
+[
+  {
+    "label": "Nenhum critério",
+    "input": {},
+    "expected": {
+      "raw": {
+        "maiores": 0,
+        "menores": 0,
+        "dx": false
+      },
+      "level": "low"
+    },
+    "originalInput": [],
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Ortopneia e estertores: 2 maiores, diagnóstico",
+    "input": {
+      "dpn": true,
+      "estertores": true
+    },
+    "expected": {
+      "raw": {
+        "maiores": 2,
+        "dx": true
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "dpn": true,
+      "estertores": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+    "input": {
+      "b3": true,
+      "edema": true,
+      "tosse": true
+    },
+    "expected": {
+      "raw": {
+        "maiores": 1,
+        "menores": 2,
+        "dx": true
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "b3": true,
+      "edema": true,
+      "tosse": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+    "input": {
+      "turgencia": true,
+      "edema": true
+    },
+    "expected": {
+      "raw": {
+        "maiores": 1,
+        "menores": 1,
+        "dx": false
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "turgencia": true,
+      "edema": true
+    },
+    "expandedZeroOptions": []
+  }
+]

@@ -1,0 +1,237 @@
+{
+  "tool": {
+    "id": "criterios-de-framingham-ic",
+    "title": "Critérios de Framingham para insuficiência cardíaca",
+    "short": "Diagnóstico clínico de IC por critérios maiores e menores",
+    "desc": "Aplique os critérios de Framingham para o diagnóstico clínico de insuficiência cardíaca: 2 critérios maiores ou 1 maior associado a 2 menores.",
+    "lead": "Critérios clínicos clássicos do estudo de Framingham para diagnosticar insuficiência cardíaca congestiva à beira do leito.",
+    "spec": [
+      "cardiologia",
+      "clinica-medica",
+      "medicina-de-emergencia",
+      "geriatria"
+    ],
+    "fields": [
+      [
+        "dpn",
+        "Maior: dispneia paroxística noturna ou ortopneia",
+        "chk",
+        []
+      ],
+      [
+        "turgencia",
+        "Maior: turgência jugular",
+        "chk",
+        []
+      ],
+      [
+        "estertores",
+        "Maior: estertores pulmonares",
+        "chk",
+        []
+      ],
+      [
+        "cardiomegalia",
+        "Maior: cardiomegalia na radiografia",
+        "chk",
+        []
+      ],
+      [
+        "eap",
+        "Maior: edema agudo de pulmão",
+        "chk",
+        []
+      ],
+      [
+        "b3",
+        "Maior: terceira bulha (galope)",
+        "chk",
+        []
+      ],
+      [
+        "pvc",
+        "Maior: pressão venosa central &gt; 16 cmH₂O",
+        "chk",
+        []
+      ],
+      [
+        "tc",
+        "Maior: tempo de circulação ≥ 25 s",
+        "chk",
+        []
+      ],
+      [
+        "refluxo",
+        "Maior: refluxo hepatojugular",
+        "chk",
+        []
+      ],
+      [
+        "perda",
+        "Maior ou menor: perda ≥ 4,5 kg em 5 dias com o tratamento",
+        "chk",
+        []
+      ],
+      [
+        "edema",
+        "Menor: edema bilateral de tornozelos",
+        "chk",
+        []
+      ],
+      [
+        "tosse",
+        "Menor: tosse noturna",
+        "chk",
+        []
+      ],
+      [
+        "dispneia",
+        "Menor: dispneia aos esforços habituais",
+        "chk",
+        []
+      ],
+      [
+        "hepatomegalia",
+        "Menor: hepatomegalia",
+        "chk",
+        []
+      ],
+      [
+        "derrame",
+        "Menor: derrame pleural",
+        "chk",
+        []
+      ],
+      [
+        "cv",
+        "Menor: capacidade vital reduzida em 1/3 do máximo",
+        "chk",
+        []
+      ],
+      [
+        "taqui",
+        "Menor: taquicardia (FC ≥ 120 bpm)",
+        "chk",
+        []
+      ]
+    ],
+    "formula": "<p>Diagnóstico de insuficiência cardíaca com <strong>2 critérios maiores</strong> ou <strong>1 maior + 2 menores</strong>.</p><p>Os critérios menores só contam se não puderem ser atribuídos a outra condição (por exemplo, hipertensão pulmonar, DPOC, cirrose, ascite ou síndrome nefrótica). A perda de peso com o tratamento pode contar como critério maior ou menor; aqui é contada como maior.</p>",
+    "table": [
+      [
+        "Critérios maiores",
+        "Critérios menores"
+      ],
+      [
+        "DPN/ortopneia, turgência jugular, estertores, cardiomegalia, EAP, B3, PVC &gt; 16 cmH₂O, tempo de circulação ≥ 25 s, refluxo hepatojugular, perda ≥ 4,5 kg em 5 dias com tratamento",
+        "Edema de tornozelos, tosse noturna, dispneia aos esforços, hepatomegalia, derrame pleural, capacidade vital reduzida em 1/3, FC ≥ 120 bpm"
+      ]
+    ],
+    "tips": [
+      "Os critérios são muito sensíveis, mas pouco específicos: confirme com BNP/NT-proBNP e ecocardiograma, como recomenda a ESC 2021.",
+      "Critérios menores atribuíveis a outra doença (DPOC, cirrose, nefropatia) não devem ser contados.",
+      "Os critérios não distinguem IC com fração de ejeção reduzida de preservada: isso depende do ecocardiograma.",
+      "O tempo de circulação e a capacidade vital quase não são medidos hoje; os demais itens bastam na prática."
+    ],
+    "sources": [
+      [
+        "McKee PA et al. The natural history of congestive heart failure: the Framingham study. N Engl J Med, 1971.",
+        "https://doi.org/10.1056/NEJM197112232852601"
+      ],
+      [
+        "McDonagh TA et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J, 2021.",
+        "https://doi.org/10.1093/eurheartj/ehab368"
+      ]
+    ],
+    "cases": [
+      [
+        "Nenhum critério",
+        [],
+        {
+          "raw": {
+            "maiores": 0,
+            "menores": 0,
+            "dx": false
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Ortopneia e estertores: 2 maiores, diagnóstico",
+        {
+          "dpn": true,
+          "estertores": true
+        },
+        {
+          "raw": {
+            "maiores": 2,
+            "dx": true
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+        {
+          "b3": true,
+          "edema": true,
+          "tosse": true
+        },
+        {
+          "raw": {
+            "maiores": 1,
+            "menores": 2,
+            "dx": true
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+        {
+          "turgencia": true,
+          "edema": true
+        },
+        {
+          "raw": {
+            "maiores": 1,
+            "menores": 1,
+            "dx": false
+          },
+          "level": "mid"
+        }
+      ]
+    ],
+    "batch": "torax-vascular",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/torax-vascular.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/torax-vascular.php",
+    "sha256": "e99bbd1938580ff9b46e0252fdd8cb72e87c63869f934005b8ef6d807ce8b6e2",
+    "bytes": 91275
+  },
+  "clinicalValidation": "not-performed"
+}
