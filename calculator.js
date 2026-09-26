@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-criterios-de-framingham-ic · Elucenia · https://github.com/Elucenia/tool-criterios-de-framingham-ic
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"criterios-de-framingham-ic","title":"Critérios de Framingham para insuficiência cardíaca","fields":[["dpn","Maior: dispneia paroxística noturna ou ortopneia","chk",[]],["turgencia","Maior: turgência jugular","chk",[]],["estertores","Maior: estertores pulmonares","chk",[]],["cardiomegalia","Maior: cardiomegalia na radiografia","chk",[]],["eap","Maior: edema agudo de pulmão","chk",[]],["b3","Maior: terceira bulha (galope)","chk",[]],["pvc","Maior: pressão venosa central &gt; 16 cmH₂O","chk",[]],["tc","Maior: tempo de circulação ≥ 25 s","chk",[]],["refluxo","Maior: refluxo hepatojugular","chk",[]],["perda","Maior ou menor: perda ≥ 4,5 kg em 5 dias com o tratamento","chk",[]],["edema","Menor: edema bilateral de tornozelos","chk",[]],["tosse","Menor: tosse noturna","chk",[]],["dispneia","Menor: dispneia aos esforços habituais","chk",[]],["hepatomegalia","Menor: hepatomegalia","chk",[]],["derrame","Menor: derrame pleural","chk",[]],["cv","Menor: capacidade vital reduzida em 1/3 do máximo","chk",[]],["taqui","Menor: taquicardia (FC ≥ 120 bpm)","chk",[]]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
