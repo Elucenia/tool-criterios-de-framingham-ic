@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-criterios-de-framingham-ic",
   "version": "0.1.0",
-  "description": "Critérios de Framingham para insuficiência cardíaca · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Critérios de Framingham para insuficiência cardíaca · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
