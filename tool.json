@@ -5,6 +5,7 @@
     "short": "Diagnóstico clínico de IC por critérios maiores e menores",
     "desc": "Aplique os critérios de Framingham para o diagnóstico clínico de insuficiência cardíaca: 2 critérios maiores ou 1 maior associado a 2 menores.",
     "lead": "Critérios clínicos clássicos do estudo de Framingham para diagnosticar insuficiência cardíaca congestiva à beira do leito.",
+    "kind": "Calculadora",
     "spec": [
       "cardiologia",
       "clinica-medica",
@@ -16,122 +17,106 @@
         "dpn",
         "Maior: dispneia paroxística noturna ou ortopneia",
         "chk",
-        []
+        {}
       ],
       [
         "turgencia",
         "Maior: turgência jugular",
         "chk",
-        []
+        {}
       ],
       [
         "estertores",
         "Maior: estertores pulmonares",
         "chk",
-        []
+        {}
       ],
       [
         "cardiomegalia",
         "Maior: cardiomegalia na radiografia",
         "chk",
-        []
+        {}
       ],
       [
         "eap",
         "Maior: edema agudo de pulmão",
         "chk",
-        []
+        {}
       ],
       [
         "b3",
         "Maior: terceira bulha (galope)",
         "chk",
-        []
+        {}
       ],
       [
         "pvc",
         "Maior: pressão venosa central &gt; 16 cmH₂O",
         "chk",
-        []
+        {}
       ],
       [
         "tc",
         "Maior: tempo de circulação ≥ 25 s",
         "chk",
-        []
+        {}
       ],
       [
         "refluxo",
         "Maior: refluxo hepatojugular",
         "chk",
-        []
+        {}
       ],
       [
         "perda",
         "Maior ou menor: perda ≥ 4,5 kg em 5 dias com o tratamento",
         "chk",
-        []
+        {}
       ],
       [
         "edema",
         "Menor: edema bilateral de tornozelos",
         "chk",
-        []
+        {}
       ],
       [
         "tosse",
         "Menor: tosse noturna",
         "chk",
-        []
+        {}
       ],
       [
         "dispneia",
         "Menor: dispneia aos esforços habituais",
         "chk",
-        []
+        {}
       ],
       [
         "hepatomegalia",
         "Menor: hepatomegalia",
         "chk",
-        []
+        {}
       ],
       [
         "derrame",
         "Menor: derrame pleural",
         "chk",
-        []
+        {}
       ],
       [
         "cv",
         "Menor: capacidade vital reduzida em 1/3 do máximo",
         "chk",
-        []
+        {}
       ],
       [
         "taqui",
         "Menor: taquicardia (FC ≥ 120 bpm)",
         "chk",
-        []
+        {}
       ]
     ],
     "formula": "<p>Diagnóstico de insuficiência cardíaca com <strong>2 critérios maiores</strong> ou <strong>1 maior + 2 menores</strong>.</p><p>Os critérios menores só contam se não puderem ser atribuídos a outra condição (por exemplo, hipertensão pulmonar, DPOC, cirrose, ascite ou síndrome nefrótica). A perda de peso com o tratamento pode contar como critério maior ou menor; aqui é contada como maior.</p>",
-    "table": [
-      [
-        "Critérios maiores",
-        "Critérios menores"
-      ],
-      [
-        "DPN/ortopneia, turgência jugular, estertores, cardiomegalia, EAP, B3, PVC &gt; 16 cmH₂O, tempo de circulação ≥ 25 s, refluxo hepatojugular, perda ≥ 4,5 kg em 5 dias com tratamento",
-        "Edema de tornozelos, tosse noturna, dispneia aos esforços, hepatomegalia, derrame pleural, capacidade vital reduzida em 1/3, FC ≥ 120 bpm"
-      ]
-    ],
-    "tips": [
-      "Os critérios são muito sensíveis, mas pouco específicos: confirme com BNP/NT-proBNP e ecocardiograma, como recomenda a ESC 2021.",
-      "Critérios menores atribuíveis a outra doença (DPOC, cirrose, nefropatia) não devem ser contados.",
-      "Os critérios não distinguem IC com fração de ejeção reduzida de preservada: isso depende do ecocardiograma.",
-      "O tempo de circulação e a capacidade vital quase não são medidos hoje; os demais itens bastam na prática."
-    ],
     "sources": [
       [
         "McKee PA et al. The natural history of congestive heart failure: the Framingham study. N Engl J Med, 1971.",
@@ -140,6 +125,14 @@
       [
         "McDonagh TA et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J, 2021.",
         "https://doi.org/10.1093/eurheartj/ehab368"
+      ],
+      [
+        "Framingham official event protocol,Version2,2006-08-24",
+        "https://biolincc.nhlbi.nih.gov/media/studies/framcohort/Protocols/Criteria%20for%20Events%20-%20Sequence%20of%20Events%20File%20SOE.pdf"
+      ],
+      [
+        "ARIC heart-failure abstraction protocol",
+        "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/document.cgi?phd=4516&study_id=phs000280.v3.p1"
       ]
     ],
     "cases": [
@@ -201,9 +194,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -212,17 +202,519 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:26:07.275Z",
+      "total": 362,
+      "passed": 362,
+      "sourceRowCount": 362,
+      "uniqueApiInputCount": 362,
+      "sourceContextCount": 362,
+      "scope": "362 supported concurrent selected-major/minor-count and2major OR1major+2minor predicate witnesses from official2006 CHF page; tc circulation-time flag is false. Absent autopsy/vascular-engorgement source items and clinical acquisition/other causes are not approved.",
+      "originalSourceRowCount": 362,
+      "excludedSourceObservationCount": 0,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "365e5c5129c0db308e9e7e72a909095b9e100bb60e6f083a35d3d4815f275a8d",
+        "total": 362,
+        "bankRowCount": 362,
+        "uniqueApiInputCount": 362,
+        "sourceContextCount": 362,
+        "fullStoredSourceRows": 362,
+        "excludedSourceObservationCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-primary-independent-expectations-final32-r2.json",
+            "sha256": "40d11daa6028d607c2b98916adb0b4d72e009237f0a476708ee241f2b4e36d03"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+            "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+            "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-primary-independent-source-check-final32-r2.json",
+          "sha256": "1adfa3b80e74c8fe41067e540f5dac40043f148703f12c43b54f98edc186bf29"
+        },
+        "packagingRequirement": "All original source32rows preserved across6artifacts,3753 source-eligible cases plus256 Duke source-ineligible observations. Preserve original expectations and explicit no-approval scope."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 362,
+        "uniqueApiInputs": 362,
+        "duplicateRows": 0
+      },
+      "sources": [
+        {
+          "primaryReview": {
+            "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+            "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+          },
+          "independentPrimaryReview": {
+            "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+            "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+          },
+          "targetedReading": {
+            "id": "criterios-de-framingham-ic",
+            "url": "https://biolincc.nhlbi.nih.gov/media/studies/framcohort/Protocols/Criteria%20for%20Events%20-%20Sequence%20of%20Events%20File%20SOE.pdf",
+            "edition": "Official Framingham Criteria for Events, Version2 2006-08-24, CHF PDF6; McKee1971 full text not read",
+            "personallyRead": [
+              "Official captured PDF6 complete visually and extracted text read"
+            ],
+            "files": [
+              "six-primary-documents-final32/framingham-events-2006.pdf",
+              "six-primary-documents-final32/framingham-events-2006-p6.png"
+            ],
+            "access": "Available captured official study protocol personally read. No assertion of original1971 whole-paper reading.",
+            "supported": "Concurrent supported local major/minor counts,2major OR1major+2minor predicate only with other causes assumed excluded, tc false; treatment weight loss counted major per page6.",
+            "excluded": [
+              "Local circulation-time≥25s is absent2006 table",
+              "Autopsy major and pulmonary vascular engorgement minor exist2006 source but absent localfields",
+              "10lb/5days converted rounded4.5kg not measurement approval",
+              "Cause exclusion, contemporary HF diagnosis/phenotypes, all acquisition thresholds"
+            ],
+            "sourceArtifacts": [
+              {
+                "file": "six-primary-documents-final32/framingham-events-2006.pdf",
+                "bytes": 35082,
+                "sha256": "f605a945711c8377db5be5a30f48f4489bb728ba9560c28f7da74c3e59e6ea36"
+              },
+              {
+                "file": "six-primary-documents-final32/framingham-events-2006-p6.png",
+                "bytes": 186992,
+                "sha256": "e64eaa6e951a86a3bd2488d842c591aa4c5ebf90c3eb62e667552d2d731de36d"
+              }
+            ]
+          },
+          "declaredOriginalMethodVersion": "Framingham/Mc Kee 1971:2 maiores ou 1 maior+2 menores; perda depeso contada maior",
+          "sourceEditionsUnchanged": true,
+          "scope": "362 supported concurrent selected-major/minor-count and2major OR1major+2minor predicate witnesses from official2006 CHF page; tc circulation-time flag is false. Absent autopsy/vascular-engorgement source items and clinical acquisition/other causes are not approved."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-primary-independent-source-check-final32-r2.json",
+      "evidenceSha256": "1adfa3b80e74c8fe41067e540f5dac40043f148703f12c43b54f98edc186bf29",
+      "independentPeer": {
+        "evidence": {
+          "file": "reports/review-20261003/six-primary-independent-peer-publication-final32.json",
+          "sha256": "cdf78c30cbcf97b22551c7177639b6480fb6ceb271ab76d0eeb1330830b356b1"
+        },
+        "status": "passed-scoped-mathematical",
+        "packagingPeer": "pending",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/criterios-de-framingham-ic/calculator.js",
+          "sha256": "65231824a87e34b5815377628c22fd27119b86cad1c5fedfc0411d1e75056742"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/criterios-de-framingham-ic/calculator.js",
+          "sha256": "65231824a87e34b5815377628c22fd27119b86cad1c5fedfc0411d1e75056742"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/criterios-de-framingham-ic/calculator.js",
+          "sha256": "65231824a87e34b5815377628c22fd27119b86cad1c5fedfc0411d1e75056742"
+        }
+      ],
+      "qualifications": [
+        "362 supported concurrent selected-major/minor-count and2major OR1major+2minor predicate witnesses from official2006 CHF page; tc circulation-time flag is false. Absent autopsy/vascular-engorgement source items and clinical acquisition/other causes are not approved.",
+        "Strict integer/boolean/source-class equality; only DAS28 continuous fields retain the original16EPS×max(1,abs reference) criterion. None of the862 historical fixture expected values or tolerances are amended.",
+        "All original4009 rows are retained across6 complete artifacts:3753 eligible numeric/predicate witnesses and256 expressly unapproved Duke surgical+imaging observations. Only3753 count toward independent source scenarios.",
+        "Original3039 failed source-check assertions and69 strict APACHE mortality parity differences remain in the immutable original report. R2repairs66 diagnosis encodings without changing expected mathematics; R2mortality87differences remain unscoped/unapproved.",
+        "Own primary-table constants and4378 expectations were persisted before any engine/Western expectation imports; own39402Node/VM/Chromium executions passed selected scope. This package stage separately replays Node/VM and binds earlier actual Chromium observations.",
+        "No diagnosis, acquisition rubric, mortality/prognostic outcome, clinical cutoff/age60 resolution, risk/prophylaxis decision, instrument/right/translation authorization, professional language or full-method conformity approval.",
+        "Prospective source28/29/30/31 recipes own other evidence leaves. Compose only declared leaves and additive helper fragments, then recompute sums/identities; do not replace whole old catalogs."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Framingham/Mc Kee 1971:2 maiores ou 1 maior+2 menores; perda depeso contada maior",
+    "implementationVersion": "criterios-de-framingham-ic@native-2026-10-03+65231824a87e",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/5122894/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Diagnóstico de insuficiência cardíaca com 2 critérios maiores ou 1 maior + 2 menores . Os critérios menores só contam se não puderem ser atribuídos a outra condição (por exemplo, hipertensão pulmonar, DPOC, cirrose, ascite ou síndrome nefrótica). A perda de peso com o tratamento pode contar como critério maior ou menor; aqui é contada como maior.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "dpn",
+            "label": "Maior: dispneia paroxística noturna ou ortopneia",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "turgencia",
+            "label": "Maior: turgência jugular",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "estertores",
+            "label": "Maior: estertores pulmonares",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cardiomegalia",
+            "label": "Maior: cardiomegalia na radiografia",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "eap",
+            "label": "Maior: edema agudo de pulmão",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "b3",
+            "label": "Maior: terceira bulha (galope)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pvc",
+            "label": "Maior: pressão venosa central &gt; 16 cmH₂O",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tc",
+            "label": "Maior: tempo de circulação ≥ 25 s",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "refluxo",
+            "label": "Maior: refluxo hepatojugular",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "perda",
+            "label": "Maior ou menor: perda ≥ 4,5 kg em 5 dias com o tratamento",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "edema",
+            "label": "Menor: edema bilateral de tornozelos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tosse",
+            "label": "Menor: tosse noturna",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dispneia",
+            "label": "Menor: dispneia aos esforços habituais",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hepatomegalia",
+            "label": "Menor: hepatomegalia",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "derrame",
+            "label": "Menor: derrame pleural",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cv",
+            "label": "Menor: capacidade vital reduzida em 1/3 do máximo",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "taqui",
+            "label": "Menor: taquicardia (FC ≥ 120 bpm)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "38492186b4d50ef67c8656eea2d82c74cce32e13ee8bd75e0d55b7cf95e00520"
+      },
+      "sourceEditions": [
+        {
+          "citation": "McKee PA et al. The natural history of congestive heart failure: the Framingham study. N Engl J Med, 1971.",
+          "url": "https://doi.org/10.1056/NEJM197112232852601",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The natural history of congestive heart failure: the Framingham study.",
+            "year": "1971",
+            "firstPublicationDate": "1971-12-01",
+            "doi": "10.1056/nejm197112232852601",
+            "pmid": "5122894",
+            "journal": "The New England journal of medicine",
+            "authors": "McKee PA, Castelli WP, McNamara PM, Kannel WB."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/5122894/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "McDonagh TA et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J, 2021.",
+          "url": "https://doi.org/10.1093/eurheartj/ehab368",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure.",
+            "year": "2021",
+            "firstPublicationDate": "2021-09-01",
+            "doi": "10.1093/eurheartj/ehab368",
+            "pmid": "34447992",
+            "journal": "European heart journal",
+            "authors": "McDonagh TA, Metra M, Adamo M, Gardner RS, Baumbach A, Böhm M, Burri H, Butler J, Čelutkienė J, Chioncel O, Cleland JGF, Coats AJS, Crespo-Leiro MG, Farmakis D, Gilard M, Heymans S, Hoes AW, Jaarsma T, Jankowska EA, Lainscak M, Lam CSP, Lyon AR, McMurray JJV, Mebazaa A, Mindham R, Muneretto C, Francesco Piepoli M, Price S, Rosano GMC, Ruschitzka F, Kathrine Skibelund A, ESC Scientific Document Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/34447992/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:26:07.275Z",
+        "total": 362,
+        "passed": 362,
+        "sourceRowCount": 362,
+        "uniqueApiInputCount": 362,
+        "sourceContextCount": 362,
+        "scope": "362 supported concurrent selected-major/minor-count and2major OR1major+2minor predicate witnesses from official2006 CHF page; tc circulation-time flag is false. Absent autopsy/vascular-engorgement source items and clinical acquisition/other causes are not approved.",
+        "originalSourceRowCount": 362,
+        "excludedSourceObservationCount": 0,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "365e5c5129c0db308e9e7e72a909095b9e100bb60e6f083a35d3d4815f275a8d",
+          "total": 362,
+          "bankRowCount": 362,
+          "uniqueApiInputCount": 362,
+          "sourceContextCount": 362,
+          "fullStoredSourceRows": 362,
+          "excludedSourceObservationCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-primary-independent-expectations-final32-r2.json",
+              "sha256": "40d11daa6028d607c2b98916adb0b4d72e009237f0a476708ee241f2b4e36d03"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+              "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+              "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-primary-independent-source-check-final32-r2.json",
+            "sha256": "1adfa3b80e74c8fe41067e540f5dac40043f148703f12c43b54f98edc186bf29"
+          },
+          "packagingRequirement": "All original source32rows preserved across6artifacts,3753 source-eligible cases plus256 Duke source-ineligible observations. Preserve original expectations and explicit no-approval scope."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 362,
+          "uniqueApiInputs": 362,
+          "duplicateRows": 0
+        },
+        "sources": [
+          {
+            "primaryReview": {
+              "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+              "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+            },
+            "independentPrimaryReview": {
+              "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+              "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+            },
+            "targetedReading": {
+              "id": "criterios-de-framingham-ic",
+              "url": "https://biolincc.nhlbi.nih.gov/media/studies/framcohort/Protocols/Criteria%20for%20Events%20-%20Sequence%20of%20Events%20File%20SOE.pdf",
+              "edition": "Official Framingham Criteria for Events, Version2 2006-08-24, CHF PDF6; McKee1971 full text not read",
+              "personallyRead": [
+                "Official captured PDF6 complete visually and extracted text read"
+              ],
+              "files": [
+                "six-primary-documents-final32/framingham-events-2006.pdf",
+                "six-primary-documents-final32/framingham-events-2006-p6.png"
+              ],
+              "access": "Available captured official study protocol personally read. No assertion of original1971 whole-paper reading.",
+              "supported": "Concurrent supported local major/minor counts,2major OR1major+2minor predicate only with other causes assumed excluded, tc false; treatment weight loss counted major per page6.",
+              "excluded": [
+                "Local circulation-time≥25s is absent2006 table",
+                "Autopsy major and pulmonary vascular engorgement minor exist2006 source but absent localfields",
+                "10lb/5days converted rounded4.5kg not measurement approval",
+                "Cause exclusion, contemporary HF diagnosis/phenotypes, all acquisition thresholds"
+              ],
+              "sourceArtifacts": [
+                {
+                  "file": "six-primary-documents-final32/framingham-events-2006.pdf",
+                  "bytes": 35082,
+                  "sha256": "f605a945711c8377db5be5a30f48f4489bb728ba9560c28f7da74c3e59e6ea36"
+                },
+                {
+                  "file": "six-primary-documents-final32/framingham-events-2006-p6.png",
+                  "bytes": 186992,
+                  "sha256": "e64eaa6e951a86a3bd2488d842c591aa4c5ebf90c3eb62e667552d2d731de36d"
+                }
+              ]
+            },
+            "declaredOriginalMethodVersion": "Framingham/Mc Kee 1971:2 maiores ou 1 maior+2 menores; perda depeso contada maior",
+            "sourceEditionsUnchanged": true,
+            "scope": "362 supported concurrent selected-major/minor-count and2major OR1major+2minor predicate witnesses from official2006 CHF page; tc circulation-time flag is false. Absent autopsy/vascular-engorgement source items and clinical acquisition/other causes are not approved."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-primary-independent-source-check-final32-r2.json",
+        "evidenceSha256": "1adfa3b80e74c8fe41067e540f5dac40043f148703f12c43b54f98edc186bf29",
+        "independentPeer": {
+          "evidence": {
+            "file": "reports/review-20261003/six-primary-independent-peer-publication-final32.json",
+            "sha256": "cdf78c30cbcf97b22551c7177639b6480fb6ceb271ab76d0eeb1330830b356b1"
+          },
+          "status": "passed-scoped-mathematical",
+          "packagingPeer": "pending",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/criterios-de-framingham-ic/calculator.js",
+            "sha256": "65231824a87e34b5815377628c22fd27119b86cad1c5fedfc0411d1e75056742"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-de-framingham-ic/calculator.js",
+            "sha256": "65231824a87e34b5815377628c22fd27119b86cad1c5fedfc0411d1e75056742"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-de-framingham-ic/calculator.js",
+            "sha256": "65231824a87e34b5815377628c22fd27119b86cad1c5fedfc0411d1e75056742"
+          }
+        ],
+        "qualifications": [
+          "362 supported concurrent selected-major/minor-count and2major OR1major+2minor predicate witnesses from official2006 CHF page; tc circulation-time flag is false. Absent autopsy/vascular-engorgement source items and clinical acquisition/other causes are not approved.",
+          "Strict integer/boolean/source-class equality; only DAS28 continuous fields retain the original16EPS×max(1,abs reference) criterion. None of the862 historical fixture expected values or tolerances are amended.",
+          "All original4009 rows are retained across6 complete artifacts:3753 eligible numeric/predicate witnesses and256 expressly unapproved Duke surgical+imaging observations. Only3753 count toward independent source scenarios.",
+          "Original3039 failed source-check assertions and69 strict APACHE mortality parity differences remain in the immutable original report. R2repairs66 diagnosis encodings without changing expected mathematics; R2mortality87differences remain unscoped/unapproved.",
+          "Own primary-table constants and4378 expectations were persisted before any engine/Western expectation imports; own39402Node/VM/Chromium executions passed selected scope. This package stage separately replays Node/VM and binds earlier actual Chromium observations.",
+          "No diagnosis, acquisition rubric, mortality/prognostic outcome, clinical cutoff/age60 resolution, risk/prophylaxis decision, instrument/right/translation authorization, professional language or full-method conformity approval.",
+          "Prospective source28/29/30/31 recipes own other evidence leaves. Compose only declared leaves and additive helper fragments, then recompute sums/identities; do not replace whole old catalogs."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "65231824a87e34b5815377628c22fd27119b86cad1c5fedfc0411d1e75056742"
+    },
+    "limits": "Os critérios maiores e menores devem estar presentes simultaneamente; causas alternativas dos sinais precisam ser consideradas. Esta interface usa a perda de pelo menos 4,5 kg em 5 dias durante tratamento como critério maior; não aplique esse peso a perda sem esse contexto. O conjunto histórico não estabelece todos os fenótipos atuais de insuficiência cardíaca nem substitui avaliação estrutural e funcional. O protocolo Framingham de 2006 contém itens adicionais e não deve ser apresentado como se cada um estivesse implementado nesta versão histórica.",
+    "limitsEvidence": {
+      "status": "direct-primary-official-section-and-indexed-historical-table-read",
+      "sources": [
+        {
+          "url": "https://biolincc.nhlbi.nih.gov/media/studies/framcohort/Protocols/Criteria%20for%20Events%20-%20Sequence%20of%20Events%20File%20SOE.pdf",
+          "edition": "Framingham official event protocol,Version2,2006-08-24",
+          "readScope": "Direct primary NHLBI protocol: entire section5 Congestive heart failure, PDFpage6, concurrent criteria, alternative causes and weight loss during CHF therapy; other event sections not read."
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/document.cgi?phd=4516&study_id=phs000280.v3.p1",
+          "edition": "ARIC heart-failure abstraction protocol",
+          "readScope": "Primary indexed Table4.1 historical Framingham major/minor criteria and treatment-dependent weight-loss qualification read; not entire protocol."
+        },
+        {
+          "url": "https://doi.org/10.1056/NEJM197112232852601",
+          "edition": "McKee1971",
+          "readScope": "Bibliographic identity only; original full cohort paper not read."
+        }
+      ],
+      "populationScope": "Concurrent clinical signs of heart failure; historical criteria are not every contemporary heart-failure phenotype.",
+      "remainingChecks": [
+        "Original1971 full paper not read.",
+        "Local historical17 items not equivalent to every official2006 protocol item.",
+        "No modern phenotype-specific clinical validation."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/criterios-de-framingham-ic/calculator.js",
+    "bytes": 5870,
+    "sha256": "65231824a87e34b5815377628c22fd27119b86cad1c5fedfc0411d1e75056742"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "b6d1781bf5af186b0890d0af59b9a5b92d2b1f6e18bb90f59b57b01a2ccb7758",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "2c6aa8b369c3c403a76e2a9efcb6d0d1efc3f20532ab60c1372637ec8dca71eb",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "2c6aa8b369c3c403a76e2a9efcb6d0d1efc3f20532ab60c1372637ec8dca71eb",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

@@ -1,0 +1,525 @@
+{
+  "id": "criterios-de-framingham-ic",
+  "at": "2026-10-05T17:29:15.493Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/criterios-de-framingham-ic/calculator.js",
+    "bytes": 5870,
+    "sha256": "65231824a87e34b5815377628c22fd27119b86cad1c5fedfc0411d1e75056742"
+  },
+  "cases": [
+    {
+      "name": "Nenhum critério",
+      "input": {
+        "dpn": false,
+        "turgencia": false,
+        "estertores": false,
+        "cardiomegalia": false,
+        "eap": false,
+        "b3": false,
+        "pvc": false,
+        "tc": false,
+        "refluxo": false,
+        "perda": false,
+        "edema": false,
+        "tosse": false,
+        "dispneia": false,
+        "hepatomegalia": false,
+        "derrame": false,
+        "cv": false,
+        "taqui": false
+      },
+      "obtained": {
+        "id": "criterios-de-framingham-ic",
+        "main": [
+          "0 + 0",
+          "maiores + menores"
+        ],
+        "label": "Critérios de Framingham",
+        "raw": {
+          "maiores": 0,
+          "menores": 0,
+          "dx": false
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.maiores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.menores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dx",
+          "expected": false,
+          "obtained": false,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.maiores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.menores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dx",
+          "expected": false,
+          "obtained": false,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "0 + 0",
+          "obtained": "0 + 0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "maiores + menores",
+          "obtained": "maiores + menores",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Ortopneia e estertores: 2 maiores, diagnóstico",
+      "input": {
+        "dpn": true,
+        "estertores": true,
+        "turgencia": false,
+        "cardiomegalia": false,
+        "eap": false,
+        "b3": false,
+        "pvc": false,
+        "tc": false,
+        "refluxo": false,
+        "perda": false,
+        "edema": false,
+        "tosse": false,
+        "dispneia": false,
+        "hepatomegalia": false,
+        "derrame": false,
+        "cv": false,
+        "taqui": false
+      },
+      "obtained": {
+        "id": "criterios-de-framingham-ic",
+        "main": [
+          "2 + 0",
+          "maiores + menores"
+        ],
+        "label": "Critérios de Framingham",
+        "raw": {
+          "maiores": 2,
+          "menores": 0,
+          "dx": true
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.maiores",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dx",
+          "expected": true,
+          "obtained": true,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.maiores",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.menores",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dx",
+          "expected": true,
+          "obtained": true,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "2 + 0",
+          "obtained": "2 + 0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "maiores + menores",
+          "obtained": "maiores + menores",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+      "input": {
+        "b3": true,
+        "edema": true,
+        "tosse": true,
+        "dpn": false,
+        "turgencia": false,
+        "estertores": false,
+        "cardiomegalia": false,
+        "eap": false,
+        "pvc": false,
+        "tc": false,
+        "refluxo": false,
+        "perda": false,
+        "dispneia": false,
+        "hepatomegalia": false,
+        "derrame": false,
+        "cv": false,
+        "taqui": false
+      },
+      "obtained": {
+        "id": "criterios-de-framingham-ic",
+        "main": [
+          "1 + 2",
+          "maiores + menores"
+        ],
+        "label": "Critérios de Framingham",
+        "raw": {
+          "maiores": 1,
+          "menores": 2,
+          "dx": true
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.maiores",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.menores",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dx",
+          "expected": true,
+          "obtained": true,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.maiores",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.menores",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dx",
+          "expected": true,
+          "obtained": true,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1 + 2",
+          "obtained": "1 + 2",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "maiores + menores",
+          "obtained": "maiores + menores",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+      "input": {
+        "turgencia": true,
+        "edema": true,
+        "dpn": false,
+        "estertores": false,
+        "cardiomegalia": false,
+        "eap": false,
+        "b3": false,
+        "pvc": false,
+        "tc": false,
+        "refluxo": false,
+        "perda": false,
+        "tosse": false,
+        "dispneia": false,
+        "hepatomegalia": false,
+        "derrame": false,
+        "cv": false,
+        "taqui": false
+      },
+      "obtained": {
+        "id": "criterios-de-framingham-ic",
+        "main": [
+          "1 + 1",
+          "maiores + menores"
+        ],
+        "label": "Critérios de Framingham",
+        "raw": {
+          "maiores": 1,
+          "menores": 1,
+          "dx": false
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.maiores",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.menores",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dx",
+          "expected": false,
+          "obtained": false,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.maiores",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.menores",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dx",
+          "expected": false,
+          "obtained": false,
+          "scope": "Existing source-audit transport regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "1 + 1",
+          "obtained": "1 + 1",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "maiores + menores",
+          "obtained": "maiores + menores",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 21,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

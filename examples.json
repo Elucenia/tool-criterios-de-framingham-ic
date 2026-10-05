@@ -1,7 +1,29 @@
 [
   {
-    "label": "Nenhum critério",
-    "input": {},
+    "id": "criterios-de-framingham-ic",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Nenhum critério",
+    "originalInput": [],
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
     "expected": {
       "raw": {
         "maiores": 0,
@@ -10,14 +32,54 @@
       },
       "level": "low"
     },
-    "originalInput": [],
-    "expandedZeroOptions": []
+    "recordedResult": {
+      "main": [
+        "0 + 0",
+        "maiores + menores"
+      ],
+      "label": "Critérios de Framingham",
+      "raw": {
+        "maiores": 0,
+        "menores": 0,
+        "dx": false
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Ortopneia e estertores: 2 maiores, diagnóstico",
-    "input": {
+    "id": "criterios-de-framingham-ic",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Ortopneia e estertores: 2 maiores, diagnóstico",
+    "originalInput": {
       "dpn": true,
       "estertores": true
+    },
+    "input": {
+      "dpn": true,
+      "estertores": true,
+      "turgencia": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
     },
     "expected": {
       "raw": {
@@ -26,18 +88,55 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "dpn": true,
-      "estertores": true
+    "recordedResult": {
+      "main": [
+        "2 + 0",
+        "maiores + menores"
+      ],
+      "label": "Critérios de Framingham",
+      "raw": {
+        "maiores": 2,
+        "menores": 0,
+        "dx": true
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
-    "input": {
+    "id": "criterios-de-framingham-ic",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+    "originalInput": {
       "b3": true,
       "edema": true,
       "tosse": true
+    },
+    "input": {
+      "b3": true,
+      "edema": true,
+      "tosse": true,
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
     },
     "expected": {
       "raw": {
@@ -47,18 +146,54 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "b3": true,
-      "edema": true,
-      "tosse": true
+    "recordedResult": {
+      "main": [
+        "1 + 2",
+        "maiores + menores"
+      ],
+      "label": "Critérios de Framingham",
+      "raw": {
+        "maiores": 1,
+        "menores": 2,
+        "dx": true
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
-    "input": {
+    "id": "criterios-de-framingham-ic",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+    "originalInput": {
       "turgencia": true,
       "edema": true
+    },
+    "input": {
+      "turgencia": true,
+      "edema": true,
+      "dpn": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
     },
     "expected": {
       "raw": {
@@ -68,10 +203,25 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "turgencia": true,
-      "edema": true
+    "recordedResult": {
+      "main": [
+        "1 + 1",
+        "maiores + menores"
+      ],
+      "label": "Critérios de Framingham",
+      "raw": {
+        "maiores": 1,
+        "menores": 1,
+        "dx": false
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

@@ -1,0 +1,497 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dpn",
+    "input": {
+      "dpn": "2",
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dpn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean turgencia",
+    "input": {
+      "dpn": false,
+      "turgencia": "2",
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "turgencia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean estertores",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": "2",
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "estertores"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cardiomegalia",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": "2",
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cardiomegalia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean eap",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": "2",
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "eap"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean b3",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": "2",
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "b3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean pvc",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": "2",
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pvc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean tc",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": "2",
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean refluxo",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": "2",
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "refluxo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean perda",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": "2",
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "perda"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean edema",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": "2",
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "edema"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean tosse",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": "2",
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tosse"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dispneia",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": "2",
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dispneia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean hepatomegalia",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": "2",
+      "derrame": false,
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hepatomegalia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean derrame",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": "2",
+      "cv": false,
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "derrame"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cv",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": "2",
+      "taqui": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean taqui",
+    "input": {
+      "dpn": false,
+      "turgencia": false,
+      "estertores": false,
+      "cardiomegalia": false,
+      "eap": false,
+      "b3": false,
+      "pvc": false,
+      "tc": false,
+      "refluxo": false,
+      "perda": false,
+      "edema": false,
+      "tosse": false,
+      "dispneia": false,
+      "hepatomegalia": false,
+      "derrame": false,
+      "cv": false,
+      "taqui": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "taqui"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
