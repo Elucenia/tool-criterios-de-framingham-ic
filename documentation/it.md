@@ -127,3 +127,31 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Criteri non soddisfatti (richiedono 2 maggiori o 1 maggiore + 2 minori)
+
+
+### 2
+
+Criteri soddisfatti: diagnosi clinica di insufficienza cardiaca
+
+Confermare con peptide natriuretico ed ecocardiogramma, che definiscono anche la frazione di eiezione.
+
+
+### 3
+
+Criteri soddisfatti: diagnosi clinica di insufficienza cardiaca
+
+Confermare con peptide natriuretico ed ecocardiogramma, che definiscono anche la frazione di eiezione.
+
+
+### 4
+
+Criteri non soddisfatti (richiedono 2 maggiori o 1 maggiore + 2 minori)
+

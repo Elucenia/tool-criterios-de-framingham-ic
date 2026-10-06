@@ -127,3 +127,31 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Kriterien nicht erfüllt (erfordern 2 Hauptkriterien oder 1 Hauptkriterium + 2 Nebenkriterien)
+
+
+### 2
+
+Kriterien erfüllt: klinische Diagnose einer Herzinsuffizienz
+
+Mit natriuretischem Peptid und Echokardiogramm bestätigen, die auch die Ejektionsfraktion definieren.
+
+
+### 3
+
+Kriterien erfüllt: klinische Diagnose einer Herzinsuffizienz
+
+Mit natriuretischem Peptid und Echokardiogramm bestätigen, die auch die Ejektionsfraktion definieren.
+
+
+### 4
+
+Kriterien nicht erfüllt (erfordern 2 Hauptkriterien oder 1 Hauptkriterium + 2 Nebenkriterien)
+

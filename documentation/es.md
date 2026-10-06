@@ -127,3 +127,31 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Criterios no cumplidos (requieren 2 mayores o 1 mayor + 2 menores)
+
+
+### 2
+
+Criterios cumplidos: diagnóstico clínico de insuficiencia cardíaca
+
+Confirme con péptido natriurético y ecocardiograma, que también definen la fracción de eyección.
+
+
+### 3
+
+Criterios cumplidos: diagnóstico clínico de insuficiencia cardíaca
+
+Confirme con péptido natriurético y ecocardiograma, que también definen la fracción de eyección.
+
+
+### 4
+
+Criterios no cumplidos (requieren 2 mayores o 1 mayor + 2 menores)
+

@@ -341,7 +341,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Framingham/Mc Kee 1971:2 maiores ou 1 maior+2 menores; perda depeso contada maior",
-    "implementationVersion": "criterios-de-framingham-ic@native-2026-10-03+65231824a87e",
+    "implementationVersion": "criterios-de-framingham-ic@native-2026-10-05+a58c0e613a69",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/5122894/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -662,7 +662,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "65231824a87e34b5815377628c22fd27119b86cad1c5fedfc0411d1e75056742"
+      "implementationHash": "a58c0e613a69ad970f6fdc3dab7c851a67a89f43931c38d7f4dee101c453223c",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "criterios-de-framingham-ic@native-2026-10-03+65231824a87e",
+          "previousImplementationHash": "65231824a87e34b5815377628c22fd27119b86cad1c5fedfc0411d1e75056742",
+          "implementationHash": "a58c0e613a69ad970f6fdc3dab7c851a67a89f43931c38d7f4dee101c453223c",
+          "scientificBodySha256": "458c3a70ddf00d0594e8174a540b7acc4e79239fceec0c2abe50fd701913d10e",
+          "metadataContractHash": "38492186b4d50ef67c8656eea2d82c74cce32e13ee8bd75e0d55b7cf95e00520",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Os critérios maiores e menores devem estar presentes simultaneamente; causas alternativas dos sinais precisam ser consideradas. Esta interface usa a perda de pelo menos 4,5 kg em 5 dias durante tratamento como critério maior; não aplique esse peso a perda sem esse contexto. O conjunto histórico não estabelece todos os fenótipos atuais de insuficiência cardíaca nem substitui avaliação estrutural e funcional. O protocolo Framingham de 2006 contém itens adicionais e não deve ser apresentado como se cada um estivesse implementado nesta versão histórica.",
     "limitsEvidence": {
@@ -698,20 +726,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/criterios-de-framingham-ic/calculator.js",
-    "bytes": 5870,
-    "sha256": "65231824a87e34b5815377628c22fd27119b86cad1c5fedfc0411d1e75056742"
+    "bytes": 6075,
+    "sha256": "a58c0e613a69ad970f6fdc3dab7c851a67a89f43931c38d7f4dee101c453223c"
   },
-  "sourceToolSha256": "b6d1781bf5af186b0890d0af59b9a5b92d2b1f6e18bb90f59b57b01a2ccb7758",
+  "sourceToolSha256": "2ab2cb0999a467833e6bc505024f7e24105b4a5d38fbb83191fa6a920af1330b",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "2c6aa8b369c3c403a76e2a9efcb6d0d1efc3f20532ab60c1372637ec8dca71eb",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "2c6aa8b369c3c403a76e2a9efcb6d0d1efc3f20532ab60c1372637ec8dca71eb",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

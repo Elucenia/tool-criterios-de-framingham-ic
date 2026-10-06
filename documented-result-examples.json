@@ -1,0 +1,607 @@
+{
+  "id": "criterios-de-framingham-ic",
+  "implementationVersion": "criterios-de-framingham-ic@native-2026-10-05+a58c0e613a69",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Nenhum critério",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Critérios não preenchidos (exigem 2 maiores ou 1 maior + 2 menores)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ortopneia e estertores: 2 maiores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Critérios preenchidos: diagnóstico clínico de insuficiência cardíaca",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Confirme com peptídeo natriurético e ecocardiograma, que também definem a fração de ejeção.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Critérios preenchidos: diagnóstico clínico de insuficiência cardíaca",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Confirme com peptídeo natriurético e ecocardiograma, que também definem a fração de ejeção.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Critérios não preenchidos (exigem 2 maiores ou 1 maior + 2 menores)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Nenhum critério",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criteria not met (require 2 major or 1 major + 2 minor)",
+            "locale": "en",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ortopneia e estertores: 2 maiores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Framingham criteria met: clinical diagnosis of heart failure",
+            "locale": "en",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "Confirm with natriuretic peptide and echocardiogram, which also define the ejection fraction.",
+            "locale": "en",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Framingham criteria met: clinical diagnosis of heart failure",
+            "locale": "en",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "Confirm with natriuretic peptide and echocardiogram, which also define the ejection fraction.",
+            "locale": "en",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criteria not met (require 2 major or 1 major + 2 minor)",
+            "locale": "en",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Nenhum critério",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criterios no cumplidos (requieren 2 mayores o 1 mayor + 2 menores)",
+            "locale": "es",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ortopneia e estertores: 2 maiores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criterios cumplidos: diagnóstico clínico de insuficiencia cardíaca",
+            "locale": "es",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "Confirme con péptido natriurético y ecocardiograma, que también definen la fracción de eyección.",
+            "locale": "es",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criterios cumplidos: diagnóstico clínico de insuficiencia cardíaca",
+            "locale": "es",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "Confirme con péptido natriurético y ecocardiograma, que también definen la fracción de eyección.",
+            "locale": "es",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criterios no cumplidos (requieren 2 mayores o 1 mayor + 2 menores)",
+            "locale": "es",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Nenhum critério",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Critères non remplis (nécessitent 2 critères majeurs ou 1 majeur + 2 mineurs)",
+            "locale": "fr",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ortopneia e estertores: 2 maiores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Critères remplis : diagnostic clinique d’insuffisance cardiaque",
+            "locale": "fr",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "Confirmer avec le peptide natriurétique et l’échocardiogramme, qui définissent également la fraction d’éjection.",
+            "locale": "fr",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Critères remplis : diagnostic clinique d’insuffisance cardiaque",
+            "locale": "fr",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "Confirmer avec le peptide natriurétique et l’échocardiogramme, qui définissent également la fraction d’éjection.",
+            "locale": "fr",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Critères non remplis (nécessitent 2 critères majeurs ou 1 majeur + 2 mineurs)",
+            "locale": "fr",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Nenhum critério",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Kriterien nicht erfüllt (erfordern 2 Hauptkriterien oder 1 Hauptkriterium + 2 Nebenkriterien)",
+            "locale": "de",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ortopneia e estertores: 2 maiores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Kriterien erfüllt: klinische Diagnose einer Herzinsuffizienz",
+            "locale": "de",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "Mit natriuretischem Peptid und Echokardiogramm bestätigen, die auch die Ejektionsfraktion definieren.",
+            "locale": "de",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Kriterien erfüllt: klinische Diagnose einer Herzinsuffizienz",
+            "locale": "de",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "Mit natriuretischem Peptid und Echokardiogramm bestätigen, die auch die Ejektionsfraktion definieren.",
+            "locale": "de",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Kriterien nicht erfüllt (erfordern 2 Hauptkriterien oder 1 Hauptkriterium + 2 Nebenkriterien)",
+            "locale": "de",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Nenhum critério",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criteri non soddisfatti (richiedono 2 maggiori o 1 maggiore + 2 minori)",
+            "locale": "it",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ortopneia e estertores: 2 maiores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criteri soddisfatti: diagnosi clinica di insufficienza cardiaca",
+            "locale": "it",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "Confermare con peptide natriuretico ed ecocardiogramma, che definiscono anche la frazione di eiezione.",
+            "locale": "it",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criteri soddisfatti: diagnosi clinica di insufficienza cardiaca",
+            "locale": "it",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "Confermare con peptide natriuretico ed ecocardiogramma, che definiscono anche la frazione di eiezione.",
+            "locale": "it",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Criteri non soddisfatti (richiedono 2 maggiori o 1 maggiore + 2 minori)",
+            "locale": "it",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Nenhum critério",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "المعايير غير مستوفاة (تتطلب 2 من المعايير الرئيسية أو 1 رئيسي + 2 صغرى)",
+            "locale": "ar",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ortopneia e estertores: 2 maiores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "المعايير مستوفاة: التشخيص السريري لقصور القلب",
+            "locale": "ar",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "تأكيد ذلك بالبيبتيد المدر للصوديوم وبفحص الإيكو القلبي، اللذين يحددان أيضًا الكسر القذفي.",
+            "locale": "ar",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "المعايير مستوفاة: التشخيص السريري لقصور القلب",
+            "locale": "ar",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "تأكيد ذلك بالبيبتيد المدر للصوديوم وبفحص الإيكو القلبي، اللذين يحددان أيضًا الكسر القذفي.",
+            "locale": "ar",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "المعايير غير مستوفاة (تتطلب 2 من المعايير الرئيسية أو 1 رئيسي + 2 صغرى)",
+            "locale": "ar",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Nenhum critério",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "未满足标准（需要 2 项主要或 1 项主要 + 2 项次要）",
+            "locale": "zh",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ortopneia e estertores: 2 maiores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "符合Framingham标准：心力衰竭的临床诊断",
+            "locale": "zh",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "用利钠肽和超声心动图确认，这两者也可定义射血分数。",
+            "locale": "zh",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "符合Framingham标准：心力衰竭的临床诊断",
+            "locale": "zh",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "用利钠肽和超声心动图确认，这两者也可定义射血分数。",
+            "locale": "zh",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "未满足标准（需要 2 项主要或 1 项主要 + 2 项次要）",
+            "locale": "zh",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Nenhum critério",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "基準を満たさない（主要2項目または主要1項目＋副2項目が必要）",
+            "locale": "ja",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ortopneia e estertores: 2 maiores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Framingham基準を満たす：心不全の臨床診断",
+            "locale": "ja",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "ナトリウム利尿ペプチドと心エコーで確認してください。これらは駆出率も定義します。",
+            "locale": "ja",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Framingham基準を満たす：心不全の臨床診断",
+            "locale": "ja",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "ナトリウム利尿ペプチドと心エコーで確認してください。これらは駆出率も定義します。",
+            "locale": "ja",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "基準を満たさない（主要2項目または主要1項目＋副2項目が必要）",
+            "locale": "ja",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Nenhum critério",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मानदंड पूरे नहीं हुए (2 प्रमुख या 1 प्रमुख + 2 लघु आवश्यक हैं)",
+            "locale": "hi",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Ortopneia e estertores: 2 maiores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Framingham मानदंड पूरे: हृदय विफलता का नैदानिक निदान",
+            "locale": "hi",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "नैट्रियूरेटिक पेप्टाइड और इकोकार्डियोग्राम से पुष्टि करें, जो इजेक्शन फ्रैक्शन भी निर्धारित करते हैं।",
+            "locale": "hi",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "B3, edema de tornozelos e tosse noturna: 1 maior + 2 menores, diagnóstico",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Framingham मानदंड पूरे: हृदय विफलता का नैदानिक निदान",
+            "locale": "hi",
+            "template": "documented-authored-cf57a2e196111a784eff"
+          },
+          "note": {
+            "text": "नैट्रियूरेटिक पेप्टाइड और इकोकार्डियोग्राम से पुष्टि करें, जो इजेक्शन फ्रैक्शन भी निर्धारित करते हैं।",
+            "locale": "hi",
+            "template": "documented-authored-a08f122ae0dfe42a3785"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Turgência jugular e edema: 1 maior + 1 menor, não preenche",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मानदंड पूरे नहीं हुए (2 प्रमुख या 1 प्रमुख + 2 लघु आवश्यक हैं)",
+            "locale": "hi",
+            "template": "documented-authored-507eb19ab5ef28dac73d"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}
